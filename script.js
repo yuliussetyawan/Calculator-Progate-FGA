@@ -56,14 +56,16 @@ const calculate = () => {
       result = parseFloat(prevNumber) + parseFloat(currentNumber);
       break;
     case "-":
-      result = prevNumber - currentNumber;
+      result = parseFloat(prevNumber) - parseFloat(currentNumber);
       break;
     case "/":
-      result = prevNumber / currentNumber;
+      result = parseFloat(prevNumber) / parseFloat(currentNumber);
       break;
     case "*":
-      result = prevNumber * currentNumber;
+      result = parseFloat(prevNumber) * parseFloat(currentNumber);
       break;
+    default:
+      return;
   }
   currentNumber = result;
   calculationOperator = "";
@@ -104,4 +106,3 @@ percentage.addEventListener("click", (event) => {
   inputPercentage(event.target.value);
   updateScreen(currentNumber);
 });
-
