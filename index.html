@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheet.css">
+
   <title>Calculator</title>
 </head>
+
 <body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <h1 class="logo">
+      <span class="text-primary">
+        <i class="fas fa-calculator"></i> JavaScript </span> Calculator
+    </h1>
+    <ul>
+      <li><a href="https://github.com/yuliussetyawan/Calculator-Progate-FGA" target="_blank">Github Repo</a></li>
+    </ul>
+  </nav>
+
+  <!-- Calculator -->
   <div class="calculator">
     <input type="text" class="calculator-screen" value="0" disabled>
     <div class="calculator-keys">
@@ -41,7 +60,16 @@
       </div>
     </div>
   </div>
-  
+
+   <!-- Footer -->
+   <footer id="main-footer" class="bg-dark py-1 text-center">
+    <div class="container">
+      <p>Copyright &copy; 2023 Progate FGA</p>
+    </div>
+
+  </footer>
+
   <script src="script.js"></script>
 </body>
+
 </html>
